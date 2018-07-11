@@ -9,7 +9,7 @@
     "client": "webpack-dev-server --config ./webpack.config.dev.js --devtool inline-source-map --hot",
     "server": "nodemon server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "postinstall": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^0.18.0",
