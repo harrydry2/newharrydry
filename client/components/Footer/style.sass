@@ -1,0 +1,56 @@
+.footer
+  background: #FAFAFA
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.18)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 6rem 13rem
+  &__quote
+    font-style: italic
+    font-size: 1.6rem
+    color: $grey
+    width: 52rem
+  &__subscribe
+    position: relative
+    &-title
+      text-transform: uppercase
+      font-size: 1.6rem
+      color: $blue
+    &-box
+      display: flex
+      margin-top: 2rem
+      &-input
+        display: flex
+        font-size: 1.6rem
+        border: 1px solid rgba(0,0,0,0.2)
+        padding: 1.7rem 2.4rem
+        width: 26rem
+        +placeholder
+          color: $lightgrey
+        &:focus
+          outline: none
+      &-button
+        display: flex
+        color: white
+        background: $blue
+        border: none
+        padding: 1.7rem 2.4rem
+        font-size: 1.6rem
+        cursor: pointer
+        transition: all 0.2s
+        &:focus
+          outline: none
+        &:hover
+          opacity: 0.8
+          transition: all 0.2s
+    &-success
+      color: $grey
+      font-size: 1.4rem
+      margin: 1rem 0 0 0.4rem
+      position: absolute
+    &-failure
+      color: $grey
+      font-size: 1.4rem
+      margin: 1rem 0 0 0.4rem
+      position: absolute              
+

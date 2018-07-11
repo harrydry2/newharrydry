@@ -1,0 +1,72 @@
+.header
+  // padding: 0rem 13rem
+  width: 100%
+  background: white
+  opacity: 0.96
+  position: fixed    
+  &__inner
+    padding: 2.4rem 13rem
+    border-bottom: 3px solid $border
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 600px)
+      padding: 1.75rem 
+      border-bottom: 2px solid $border      
+  &__logo
+    font-size: 2.1rem
+    font-weight: 600
+    color: $black
+  &__left
+    display: flex
+    align-items: center
+    height: 0
+    @media screen and (max-width: 600px)
+      display: none        
+    & > *
+      margin-left: 2.6rem
+    &-text
+      color: $lightgrey
+      font-size: 1.6rem
+      padding: 2.3rem 0
+      border-bottom: 3px solid transparent
+      transform: translateY(2px)
+      cursor: pointer
+      transition: all 0.2s         
+      &:hover
+        color: $grey
+        transition: all 0.2s        
+      &-active
+        color: $grey
+        border-bottom: 3px solid $blue
+  &__inner1
+    display: none
+    flex-direction: column
+    background: #fafafa
+    box-shadow: 0 2px 1px rgba(0,0,0,0.10)   
+    @media screen and (max-width: 600px)
+      padding: 0 1.75rem
+      display: flex
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 1.75rem 0
+      &-text
+        font-size: 1.6rem
+        color: $blue 
+    &-bottom
+      display: none
+      padding-bottom: 1.75rem
+      &-active
+        display: block
+      &-text
+        font-size: 1.6rem
+        color: $grey
+        margin-top: 0.6rem
+        font-weight: 300
+        display: block
+
+.icons__twitter-outer
+  display: flex
+  align-items: flex-end
