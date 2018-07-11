@@ -7,7 +7,7 @@
         "polyfill": false,
         "regenerator": true
       }
-    ],
-    ["inline-react-svg"]
+    ]
+    // ["inline-react-svg"]
   ]
 }

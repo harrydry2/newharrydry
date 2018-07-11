@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Twitter from "../../assets/icons/twitter.svg";
-import Mail from "../../assets/icons/mail.svg";
-import Ham from "../../assets/icons/ham.svg";
-import Chevrondown from "../../assets/icons/chevrondown.svg";
+// import Twitter from "../../assets/icons/twitter.svg";
+// import Mail from "../../assets/icons/mail.svg";
+// import Ham from "../../assets/icons/ham.svg";
+import { HamSVG, TwitterSVG, ChevrondownSVG, MailSVG } from "./icons";
+
+// import Chevrondown from "../../assets/icons/chevrondown.svg";
 import "./style.sass";
 
 class Header extends Component {
@@ -94,11 +96,11 @@ class Header extends Component {
               rel="noopener noreferrer"
               className="icons__twitter-outer"
               href="https://twitter.com/140_Canvas">
-              <Twitter className="icons__twitter" />
+              <TwitterSVG />
             </a>
-            <Mail className="icons__mail" />
+            <MailSVG />
           </div>
-          <Ham className="icons__ham" />
+          <HamSVG />
         </div>
         <div className="header__inner1">
           <div className="header__inner1-top">
@@ -106,7 +108,7 @@ class Header extends Component {
               {kanyemenu && "The Kanye Story"}
               {diary && "Diary"}
             </div>
-            <Chevrondown className="icons__down" onClick={this.handleClick} />
+            <ChevrondownSVG onClick={this.handleClick} />
           </div>
           <div className={`header__inner1-bottom ${showNavbottom}`}>
             {kanyemenu && kanyeArray.map(this.renderBottomMenu)}

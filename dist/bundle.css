@@ -72,9 +72,6 @@
 .icons__twitter-outer {
   display: flex;
   align-items: flex-end; }
-.subheader {
-  background: blue;
-  position: fixed; }
 .footer {
   background: #FAFAFA;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.18);
