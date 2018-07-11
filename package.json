@@ -8,7 +8,8 @@
     "build": "webpack --mode production --config ./webpack.config.prod.js",
     "client": "webpack-dev-server --config ./webpack.config.dev.js --devtool inline-source-map --hot",
     "server": "nodemon server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "webpack --mode production --config ./webpack.config.prod.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
