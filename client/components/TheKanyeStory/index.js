@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Header from "../Header/index";
+import Mobileheader from "../Mobileheader/index";
 import Footer from "../Footer/index";
 import LeftMenu from "./LeftMenu/index";
 import Idea from "./Idea/index";
@@ -14,6 +15,7 @@ class TheKanyeStory extends Component {
     return (
       <div>
         <Header />
+        <Mobileheader />
         <LeftMenu />
         <div className="ks">
           <Switch>

@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-// import Twitter from "../../assets/icons/twitter.svg";
-// import Mail from "../../assets/icons/mail.svg";
-// import Ham from "../../assets/icons/ham.svg";
-import { HamSVG, TwitterSVG, ChevrondownSVG, MailSVG } from "./icons";
+import { HamSVG, TwitterSVG, ChevrondownSVG, MailSVG } from "../Header/icons";
 
-// import Chevrondown from "../../assets/icons/chevrondown.svg";
-import "./style.sass";
+// import "./style.sass";
 
 class Header extends Component {
   state = {
@@ -69,38 +65,17 @@ class Header extends Component {
     const { navbottom, kanyeArray, diaryArray } = this.state;
     const showNavbottom = navbottom ? "header__inner1-bottom-active" : "";
     return (
-      <div className="header">
-        <div className="header__inner">
-          <div className="header__logo">harrydry</div>
-          <div className="header__left">
-            <NavLink
-              to={`/thekanyestory`}
-              className="header__left-text"
-              activeClassName={"header__left-text-active"}>
-              The Kanye Story
-            </NavLink>
-            <NavLink
-              to={`/diary`}
-              className="header__left-text"
-              activeClassName={"header__left-text-active"}>
-              Diary
-            </NavLink>
-            <NavLink
-              to={`/projects`}
-              className={`header__left-text`}
-              activeClassName={"header__left-text-active"}>
-              Projects
-            </NavLink>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icons__twitter-outer"
-              href="https://twitter.com/140_Canvas">
-              <TwitterSVG />
-            </a>
-            <MailSVG />
+      <div className="header__inner1">
+        <div className="header__inner1-top">
+          <div className="header__inner1-top-text">
+            {kanyemenu && "The Kanye Story"}
+            {diary && "Diary"}
           </div>
-          <HamSVG />
+          <ChevrondownSVG onClick={this.handleClick} />
+        </div>
+        <div className={`header__inner1-bottom ${showNavbottom}`}>
+          {kanyemenu && kanyeArray.map(this.renderBottomMenu)}
+          {diary && diaryArray.map(this.renderBottomMenu)}
         </div>
       </div>
     );

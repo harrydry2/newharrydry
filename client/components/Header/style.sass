@@ -1,18 +1,19 @@
 .header
-  // padding: 0rem 13rem
+  overflow: visible !important
   width: 100%
   background: white
-  opacity: 0.96
-  position: fixed    
+  opacity: 0.96  
   &__inner
     padding: 2.4rem 13rem
     border-bottom: 3px solid $border
     display: flex
     justify-content: space-between
     align-items: center
+    position: fixed    
     @media screen and (max-width: 600px)
       padding: 1.75rem 
-      border-bottom: 2px solid $border      
+      border-bottom: 2px solid $border
+      position: static                
   &__logo
     font-size: 2.1rem
     font-weight: 600
@@ -46,7 +47,11 @@
     box-shadow: 0 2px 1px rgba(0,0,0,0.10)   
     @media screen and (max-width: 600px)
       padding: 0 1.75rem
-      display: flex
+      display: block
+      top: 0 !important
+      z-index: 999
+      background: pink
+      position: sticky
     &-top
       display: flex
       justify-content: space-between
