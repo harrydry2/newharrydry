@@ -2,14 +2,17 @@
   overflow: visible !important
   width: 100%
   background: white
-  opacity: 0.96  
+  opacity: 0.96
+  z-index: 11  
+  position: fixed
+  @media screen and (max-width: 600px)
+    position: static
   &__inner
     padding: 2.4rem 13rem
     border-bottom: 3px solid $border
     display: flex
     justify-content: space-between
     align-items: center
-    position: fixed    
     @media screen and (max-width: 600px)
       padding: 1.75rem 
       border-bottom: 2px solid $border
@@ -44,14 +47,13 @@
     display: none
     flex-direction: column
     background: #fafafa
-    box-shadow: 0 2px 1px rgba(0,0,0,0.10)   
+    box-shadow: 0 2px 1px rgba(0,0,0,0.20)   
     @media screen and (max-width: 600px)
       padding: 0 1.75rem
       display: block
+      position: sticky
       top: 0 !important
       z-index: 999
-      background: pink
-      position: sticky
     &-top
       display: flex
       justify-content: space-between
