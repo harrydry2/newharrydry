@@ -8,6 +8,7 @@ import Idea from "./Idea/index";
 import Flashback from "./Flashback/index";
 import Viral from "./Viral/index";
 import Coding from "./Coding/index";
+import Launch from "./Launch/index";
 import "./style.sass";
 
 class TheKanyeStory extends Component {
@@ -38,6 +39,11 @@ class TheKanyeStory extends Component {
               path="/thekanyestory/coding"
               exact
               component={() => <Coding />}
+            />
+            <Route
+              path="/thekanyestory/launch"
+              exact
+              component={() => <Launch />}
             />
             <Redirect from="/thekanyestory" to="/thekanyestory/idea" />
           </Switch>

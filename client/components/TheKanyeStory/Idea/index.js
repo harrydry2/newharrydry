@@ -27,11 +27,13 @@ const Idea = props => (
     </p>
     <Image img={"teslasupreme"} alt={"Tesla Flamethrower"} />
     <p>
-      You’ve go to become Bart Simpson. I jump out of bed and start scribbling
-      ideas. Dating is a good starting spot. Dating is funny and simple. The
-      media love it. I just need something controversial. Brexit is
-      controversial. Brexit Dating. I open goDaddy and search. BrexitDating.com.
-      Already taken. What about Brexit.Dating. £9.99. Add to Basket.
+      You’ve go to become Bart Simpson. Companies splash hundreds of thousands
+      on growth hacking goons but you can just sideswipe all that shit if you
+      just use your imagination. I jump out of bed and start scribbling ideas.
+      Dating is a good starting spot. Dating is funny and simple. The media love
+      it. I just need something controversial. Brexit is controversial. Brexit
+      Dating. I open goDaddy and search. BrexitDating.com. Already taken. What
+      about Brexit.Dating. £9.99. Add to Basket.
     </p>
     <p>
       But I don’t care about Brexit. There’s no passion. I need a{" "}

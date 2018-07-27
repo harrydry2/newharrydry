@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Image from "../../Image/index";
+import Image from "../../Image";
 import "./style.sass";
 
 class Viral extends Component {
-  video = React.createRef();
   render() {
     return (
       <div className="text">
@@ -109,10 +108,10 @@ class Viral extends Component {
           I turn it off. As soon as I get out of the meeting I check the
           database. 2100 email address’. My heart’s beating fast. I refresh the
           database. Now 2105 emails. I type Kanye West’s name into google. And
-          it’s everywhere. (photo) I recognise most journalists names from my
-          email list. I check analytics. There’s 150 people on my the site. I
-          check my inbox. 45 unread. Lunch break is over and I’m being called
-          back in for another meeting. Fuck being employed.
+          it’s everywhere. I recognise most journalists names from my email
+          list. I check analytics. There’s 150 people on my the site. I check my
+          inbox. 45 unread. Lunch break is over and I’m being called back in for
+          another meeting. Fuck being employed.
         </p>
         <Image img={"newmesh"} alt={"Yeezy Dating Press"} />
         <p>
